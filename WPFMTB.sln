@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFMTB", "WPFMTB\WPFMTB.csproj", "{BB331BFC-23A1-4A5B-ACA4-C3DF7586554F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB331BFC-23A1-4A5B-ACA4-C3DF7586554F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB331BFC-23A1-4A5B-ACA4-C3DF7586554F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB331BFC-23A1-4A5B-ACA4-C3DF7586554F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB331BFC-23A1-4A5B-ACA4-C3DF7586554F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {259C99AF-1367-4A58-98BE-BFFC068D5798}
+	EndGlobalSection
+EndGlobal
