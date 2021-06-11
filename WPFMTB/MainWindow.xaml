@@ -11,20 +11,23 @@
     mc:Ignorable="d">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition />
+            <ColumnDefinition Width="200" />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-
-
-
-        <ListView
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Left" Margin="5 5 5 0" >
+                <Button Content="Add" Command="{Binding AddCommand}"/>
+            </StackPanel>
+            <ListView
             DisplayMemberPath="BrandName"
             ItemsSource="{Binding MountainBikes}"
             SelectedItem="{Binding SelectedBike, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            
+        </DockPanel>
 
-        <Grid Margin="10 0 0 0"
-            Grid.Column="1">
+        <Grid Grid.Column="1" Margin="10,0,0,0">
             <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
@@ -48,27 +51,31 @@
                 Grid.Column="1"
                 Width="150"
                 Text="{Binding SelectedBike.FrameMaterial, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-            
+
             <TextBlock Grid.Row="2" Text="Frame Size:" />
             <TextBox
                 Grid.Row="2"
                 Grid.Column="1"
                 Width="150"
                 Text="{Binding SelectedBike.FrameSize, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-            
+
             <TextBlock Grid.Row="3" Text="Tire Size:" />
             <TextBox
                 Grid.Row="3"
                 Grid.Column="1"
                 Width="150"
                 Text="{Binding SelectedBike.TireSize, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-            
+
             <TextBlock Grid.Row="4" Text="Has Suspension" />
             <TextBox
                 Grid.Row="4"
                 Grid.Column="1"
                 Width="150"
                 Text="{Binding SelectedBike.HasSuspension, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <StackPanel Grid.Row="5" Orientation="Horizontal">
+                <Button Content="Save" Command="{Binding SaveCommand}"/>
+                <Button Content="Delete" Command="{Binding DeleteCommand}"/>
+            </StackPanel>
         </Grid>
     </Grid>
 </Window>
